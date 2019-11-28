@@ -1,7 +1,7 @@
 <h2 mat-dialog-title>Lets publish</h2>
 <mat-dialog-content class="mat-typography">
     <div class="main-content">
-        <div class="container">
+        <div class="container-fluid">
 
             <div class="row">
                 <div class="col-lg-12 col-md-12">
@@ -31,7 +31,7 @@
                                             <tr>
                                                 
                                                 <td><mat-form-field>
-                                                        <input matInput placeholder="Input">
+                                                        <input matInput placeholder="Title">
                                                       </mat-form-field>
                                                     </td>
                                                
@@ -41,7 +41,7 @@
                                                 <td>
 
                                                         <mat-form-field>
-                                                                <textarea matInput placeholder="Textarea"></textarea>
+                                                                <textarea matInput placeholder="Description"></textarea>
                                                               </mat-form-field>
                                                             
                                                 </td>
@@ -70,7 +70,7 @@
 </mat-dialog-content>
 <mat-dialog-actions align="end">
     <button mat-button mat-dialog-close>Cancel</button>
-    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Submit</button>
 </mat-dialog-actions>
 
 

@@ -132,7 +132,11 @@ export class NavbarComponent implements OnInit {
 
 
     openDialog() {
-        const dialogRef = this.dialog.open(BottomSheetOverviewExampleSheet);
+        const dialogRef = this.dialog.open(BottomSheetOverviewExampleSheet,
+            {
+                height: '600px',
+                width: '75%'
+            });
 
         dialogRef.afterClosed().subscribe(result => {
             console.log(`Dialog result: ${result}`);
