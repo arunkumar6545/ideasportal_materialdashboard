@@ -134,7 +134,7 @@ export class NavbarComponent implements OnInit {
     openDialog() {
         const dialogRef = this.dialog.open(AddideaComponent,
             {
-                height: '700px',
+                height: '750px',
                 width: '75%'
             });
 
