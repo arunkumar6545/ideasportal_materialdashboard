@@ -1,3 +1,85 @@
-<p>
-  addidea works!
-</p>
+<h2 mat-dialog-title>Let me bring a change</h2>
+<mat-dialog-content class="mat-typography">
+    <div class="main-content">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="card">
+                        <div class="card-header card-header-tabs card-header-primary">
+                            <div class="nav-tabs-navigation">
+                                <div class="nav-tabs-wrapper">
+                                    <!-- <span class="nav-tabs-title">Submissions:</span> -->
+                                    <ul class="nav nav-tabs" data-tabs="tabs">
+                                        <li class="nav-item">
+                                            <a mat-button data-toggle="tab">
+                                                <!-- <i class="material-icons">bug_report</i> Approved -->
+                                                My Idea
+                                                <div class="ripple-container"></div>
+                                            </a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="profile">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                
+                                                <td><mat-form-field>
+                                                        <input matInput placeholder="Title">
+                                                      </mat-form-field>
+                                                    </td>
+                                               
+                                            </tr>
+                                            <tr>
+                                               
+                                                <td>
+
+                                                        <mat-form-field>
+                                                                <textarea matInput placeholder="Description"></textarea>
+                                                              </mat-form-field>
+                                                            
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td><mat-form-field>
+                                                        <input matInput (keyup)="searchkey($event)" placeholder="Search Tags">
+                                                      </mat-form-field>
+                                                    </td>
+                                               
+                                            </tr>
+                                            <tr>
+                                              <td>
+                                                  <mat-chip-list>
+                                                      <mat-chip>istio</mat-chip>
+                                                      <mat-chip>microservice</mat-chip>
+                                                      <mat-chip>kubernetes</mat-chip>
+                                                    </mat-chip-list>
+                                              </td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                    </table>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Submit</button>
+</mat-dialog-actions>

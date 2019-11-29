@@ -7,7 +7,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MaterialModule } from 'app/material.module';
 import { AddideaComponent } from './addidea/addidea.component';
-import { BottomSheetOverviewExampleSheet } from './navbar/BottomSheetOverviewExampleSheet';
 
 @NgModule({
   imports: [
@@ -18,7 +17,6 @@ import { BottomSheetOverviewExampleSheet } from './navbar/BottomSheetOverviewExa
   declarations: [
     FooterComponent,
     NavbarComponent,
-    BottomSheetOverviewExampleSheet,
     SidebarComponent,
     AddideaComponent,
   ],
@@ -27,6 +25,6 @@ import { BottomSheetOverviewExampleSheet } from './navbar/BottomSheetOverviewExa
     NavbarComponent,
     SidebarComponent
   ],
-  entryComponents: [BottomSheetOverviewExampleSheet]
+  entryComponents: [AddideaComponent]
 })
 export class ComponentsModule { }

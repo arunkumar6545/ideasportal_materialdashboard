@@ -3,7 +3,7 @@ import { ROUTES } from '../sidebar/sidebar.component';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material';
-import { BottomSheetOverviewExampleSheet } from './BottomSheetOverviewExampleSheet';
+import { AddideaComponent } from '../addidea/addidea.component';
 
 @Component({
     selector: 'app-navbar',
@@ -132,7 +132,7 @@ export class NavbarComponent implements OnInit {
 
 
     openDialog() {
-        const dialogRef = this.dialog.open(BottomSheetOverviewExampleSheet,
+        const dialogRef = this.dialog.open(AddideaComponent,
             {
                 height: '600px',
                 width: '75%'

@@ -12,4 +12,13 @@ export class AddideaComponent implements OnInit {
   ngOnInit() {
   }
 
+  searchkey(event){
+    if (event.keyCode === 13) {
+      
+      event.preventDefault();
+      alert("enter pressed");
+      
+    }
+  }
+
 }
