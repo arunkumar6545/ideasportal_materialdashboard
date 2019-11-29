@@ -41,11 +41,13 @@
                                                 <td>
 
                                                         <mat-form-field>
-                                                                <textarea matInput placeholder="Description"></textarea>
+                                                                <textarea matInput matTextareaAutosize placeholder="Elaborate your idea"></textarea>
                                                               </mat-form-field>
-                                                            
+                                                            <br/>
+                                                            <input  id="singleFile" type="file" >
                                                 </td>
                                             </tr>
+                                            
                                             <tr>
                                                 
                                                 <td><mat-form-field>
@@ -81,5 +83,5 @@
 </mat-dialog-content>
 <mat-dialog-actions align="end">
     <button mat-button mat-dialog-close>Cancel</button>
-    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Submit</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Share Idea</button>
 </mat-dialog-actions>
