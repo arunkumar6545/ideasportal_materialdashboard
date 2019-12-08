@@ -21,6 +21,8 @@ import {
   MatSelectModule
 } from '@angular/material';
 import { IdeafeedsComponent } from 'app/ideafeeds/ideafeeds.component';
+import { IdeasComponent } from 'app/ideas/ideas.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -38,6 +40,7 @@ import { IdeafeedsComponent } from 'app/ideafeeds/ideafeeds.component';
     DashboardComponent,
     UserProfileComponent,
     IdeafeedsComponent,
+    IdeasComponent,
     TableListComponent,
     TypographyComponent,
     IconsComponent,
